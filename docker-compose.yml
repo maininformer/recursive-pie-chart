@@ -1,0 +1,6 @@
+version: '2'
+services:
+  python:
+    image: tailordev/pandas:latest
+    volumes:
+      - ".:/python-app/"
