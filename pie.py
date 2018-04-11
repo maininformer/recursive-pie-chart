@@ -1,6 +1,6 @@
 from pdb import set_trace as st
 
-def good_parenting(cls):
+def auto_register_with_parent(cls):
     _sentinel = object()
     # save the old set attribute method
     old_setattr = getattr(cls, '__setattr__', None)
@@ -14,7 +14,7 @@ def good_parenting(cls):
     cls.__setattr__ = __setattr__
     return cls
 
-@good_parenting
+@auto_register_with_parent
 class Slice(object):
     def __init__(self, label='template', parent=None):
         self.parent = parent
