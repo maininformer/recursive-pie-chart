@@ -1,7 +1,2 @@
-# python-a-la-carte
-Dockerized environment for python development
+Stopped because sunburst charts will solve my problem now.:w
 
-```bash
-docker-compose run python bash
-```
-no fuss all fun.
